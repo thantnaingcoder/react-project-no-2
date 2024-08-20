@@ -17,6 +17,15 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'custom-image': "url('./src/images/treatment-side-img.jpg')",
+        'dot-image': "url('./src/images/dots.png')",
+      },
+      backgroundSize: {
+        '50%': '50%',
+        '16': '10rem',
+        '20': '17rem',
+      },
        colors : {
          "main_color":"#00C6A9"
        },
@@ -36,5 +45,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins:  [require("tailwindcss-animate",require('daisyui'),)],
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className=" container flex items-center content-center gap-5 text-md py-3">
+    <div className="  container flex items-center content-center gap-5 text-md py-3">
       <div className=" flex items-center content-center gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
