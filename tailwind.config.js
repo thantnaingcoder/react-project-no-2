@@ -24,7 +24,7 @@ module.exports = {
       backgroundSize: {
         '50%': '50%',
         '16': '10rem',
-        '20': '17rem',
+        '20': '19rem',
       },
        colors : {
          "main_color":"#00C6A9"

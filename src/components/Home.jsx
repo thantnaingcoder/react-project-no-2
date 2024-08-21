@@ -8,26 +8,29 @@ import ScrollNav from "./ScrollNav";
 import BookingForm from "./BookingForm";
 import About from "./About";
 import Treatment from "./Treatment";
+import { CarouselSpacing } from "./CarouselSpacing";
 
 const Home = () => {
   const nav = useNavigate();
   return (
     <>
-      <div className=" h-[2000px]">
-        <Layout>
+      <div className=" ">
+        {/* <Layout>
           <NavBar />
-        </Layout>
+        </Layout> */}
         {/* <MainNavBar/> */}
 
         <Slider />
 
-        <ScrollNav />
+       
 
         <BookingForm />
 
         <About />
 
         <Treatment/>
+
+        <CarouselSpacing/>
       </div>
     </>
   );

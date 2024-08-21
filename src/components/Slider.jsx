@@ -24,19 +24,23 @@ const Slider = () => {
     Autoplay({ delay: 3000, stopOnInteraction: true })
   );
   return (
-       <div className=" bg-dot-image bg-no-repeat  bg-right-bottom bg-20 ">
+       <div className=" bg-dot-image bg-no-repeat  bg-right-bottom bg-inherit bg-20 ">
       <Carousel
-        plugins={[plugin.current]}
+       opts={{
+        align: "start",
+        loop: true,
+      }}
         className="max-w-full mx-auto  container border-b-2 shadow-lg     "
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
+        plugins={[plugin.current]}
+        // onMouseEnter={plugin.current.stop}
+        // onMouseLeave={plugin.current.reset}
       >
          <Layout>
         <CarouselContent className=" mt-5 ">
 
           <CarouselItem>
             
-            <div className=" bg-transparent grid grid-cols-2 py-5">
+            <div className=" mt-16 bg-transparent grid grid-cols-2 py-5">
               <div className=" mt-24 ">
                 <Lottie
                   loop={true}

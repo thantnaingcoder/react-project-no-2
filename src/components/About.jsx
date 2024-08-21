@@ -7,7 +7,7 @@ const About = () => {
   return (
     <Layout>
 
-          <div className='  mt-20 grid grid-cols-2'>
+          <div className=' mt-36 grid grid-cols-2'>
              <div>  <img src={abt}/></div>
              <div className=' items-center content-center space-y-10 pr-5'>
                   <div className=' font-bold flex text-2xl'> <p>About</p>  <p className=' text-main_color ms-5'>Hospital</p></div>
