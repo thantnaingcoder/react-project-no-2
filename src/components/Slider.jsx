@@ -32,8 +32,8 @@ const Slider = () => {
       }}
         className="max-w-full mx-auto  container border-b-2 shadow-lg     "
         plugins={[plugin.current]}
-        // onMouseEnter={plugin.current.stop}
-        // onMouseLeave={plugin.current.reset}
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.play}
       >
          <Layout>
         <CarouselContent className=" mt-5 ">

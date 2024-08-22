@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Layout from "./Layout";
 import MenuItem from "@mui/material/MenuItem";
 import { Button } from "@/components/ui/button";
+import { faL } from "@fortawesome/free-solid-svg-icons";
+import Appointment from "./Appointment";
 
 const BookingForm = () => {
+
+  const [show,setShow] = useState(false);
   const doctor = [
     {
       value: "USD",
@@ -45,13 +49,13 @@ const BookingForm = () => {
   ];
   return (
     <Layout>
-      <div className=" p-10 shadow-2xl mt-24">
+      <div className="  p-10 shadow-2xl mt-24">
         <div className=" flex gap-4 font-semibold py-5">
-          <p className=" border-b-main_color border-b-2">BOOK</p>{" "}
-          <p className=" text-main_color">APPOINTMENT</p>{" "}
+          <button onClick={() => setShow(false) } className={` ${show ? " text-main_color " : "border-b-main_color border-b-2"} `}>BOOK</button>
+          <button onClick={() => setShow(true) } className={` ${show ? "border-b-main_color border-b-2 " : " text-main_color"} `}>APPOINTMENT</button>
         </div>
 
-        <form className=" grid grid-cols-3 gap-5">
+        <form className={` ${ show && "hidden"}  grid grid-cols-3 gap-5`}>
           <TextField
             id="outlined-basic"
             className=" "
@@ -122,6 +126,10 @@ const BookingForm = () => {
                     SUBMIT NOW
                   </Button>
         </form>
+
+       { show && <Appointment/> }
+
+       
       </div>
     </Layout>
   );

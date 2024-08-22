@@ -17,7 +17,7 @@ const DoctorsCard = ({name,photo}) => {
 
   return (
 
-    <CarouselItem  className="pl-1 md:basis-1/2 lg:basis-1/3">
+    <CarouselItem   className="pl-1 md:basis-1/2 lg:basis-1/3">
     <div className=" py-10">
       <Card>
         <CardContent className="flex aspect-square items-center justify-center  p-6">

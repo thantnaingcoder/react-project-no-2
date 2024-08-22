@@ -49,8 +49,8 @@ export function CarouselSpacing() {
           loop: true,
         }}
         plugins={[plugin.current]}
-        // onMouseEnter={plugin.current.stop}
-        // onMouseLeave={plugin.current.reset}
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.play}
         className=" p-5 "
       >
         <div className=" flex gap-4 justify-center items-center container max-w-full">
