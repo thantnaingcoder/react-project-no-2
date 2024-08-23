@@ -1,19 +1,20 @@
 import React from "react";
 import logo from "../images/logo.png";
-import { useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const MainNavBar = () => {
   const nav= useNavigate();
+  
   return (
-    <div className="  flex  justify-between bg-main_color font-semibold text-md text-white  px-6 ">
+    <div className={`  flex  justify-between bg-main_color font-semibold text-md text-white  px-6`}>
       <div className=" flex items-center gap-6  ">
-        <div className=" "><img className=" bg-white py-2 px-6 size-24  " src={logo}></img></div>
-        <div  onClick={() => nav("/")} >HOME</div>
-        <div onClick={() => nav("/about")}>ABOUT</div>
-        <div onClick={() => nav("/treatment")}> TREATMENT</div>
-        <div onClick={() => nav("/doctor")}>DOCTORS</div>
-        <div>TESTIMONIAL</div>
-        <div>CONTACT US</div>
+        <button className=" "><img className=" bg-white py-2 px-6 size-24  " src={logo}></img></button>
+        <button  onClick={() => nav("/")} >HOME</button>
+        <button onClick={() => nav("/about")}>ABOUT</button>
+        <button onClick={() => nav("/treatment")}> TREATMENT</button>
+        <button onClick={() => nav("/doctor")}>DOCTORS</button>
+        <button onClick={() => nav("/testimonial")}>TESTIMONIAL</button>
+        <button onClick={() => nav("/contact")}>CONTACT US</button>
       </div>
 
       <div className=" flex items-center gap-3">

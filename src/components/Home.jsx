@@ -9,6 +9,9 @@ import BookingForm from "./BookingForm";
 import About from "./About";
 import Treatment from "./Treatment";
 import { CarouselSpacing } from "./CarouselSpacing";
+import { Testimonial } from "./Testimonial";
+import Touch from "./Touch";
+import Footer from "./Footer";
 
 const Home = () => {
   const nav = useNavigate();
@@ -31,6 +34,12 @@ const Home = () => {
         <Treatment/>
 
         <CarouselSpacing/>
+
+        <Testimonial/>
+
+        <Touch/>
+
+       
       </div>
     </>
   );

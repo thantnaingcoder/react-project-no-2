@@ -5,6 +5,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 import ScrollNav from './components/ScrollNav'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
     
     <ScrollNav/>
     <Outlet/>
+    <Footer/>
     
     </>
         

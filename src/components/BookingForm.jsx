@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import Layout from "./Layout";
 import MenuItem from "@mui/material/MenuItem";
 import { Button } from "@/components/ui/button";
-import { faL } from "@fortawesome/free-solid-svg-icons";
+
 import Appointment from "./Appointment";
 
 const BookingForm = () => {

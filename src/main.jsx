@@ -12,6 +12,8 @@ import About from './components/About.jsx'
 import Home from './components/Home.jsx'
 import Treatment from './components/Treatment.jsx'
 import { CarouselSpacing } from './components/CarouselSpacing.jsx'
+import { Testimonial } from './components/Testimonial.jsx'
+import Touch from './components/Touch.jsx'
 
 
 const router = createBrowserRouter([
@@ -31,6 +33,12 @@ const router = createBrowserRouter([
       } ,
       { path : "/doctor",
         element : <CarouselSpacing/>
+      } ,
+      { path : "/testimonial",
+        element : <Testimonial/>
+      }  ,
+      { path : "/contact",
+        element : <Touch/>
       } 
       
     ]

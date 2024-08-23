@@ -31,6 +31,7 @@ const About = () => {
     );
   }, []);
   return (
+   <>
     <Layout>
 
           <div ref={fadeInRef} className=' box from  mt-36 grid grid-cols-2'>
@@ -55,6 +56,7 @@ const About = () => {
 
           </div>
     </Layout>
+   </>
   
   )
 }

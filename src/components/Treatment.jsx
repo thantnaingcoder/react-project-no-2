@@ -7,6 +7,7 @@ import t4 from "../images/t4.png"
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import tSlide from "../images/treatment-side-img.jpg"
+import Footer from './Footer'
 
 const Treatment = () => {
 
@@ -34,7 +35,7 @@ const Treatment = () => {
     );
   }, []);
   return (
-    <div ref={fadeInRef} className=' mt-32 max-w-full container bg-16 bg-right bg-custom-image bg-no-repeat  '>
+    <div ref={fadeInRef} className=' mb-10 mt-32 max-w-full container bg-16 bg-right bg-custom-image bg-no-repeat  '>
       <Layout>
         <div className=' py-10 space-y-20'>
          <h2 className='  flex justify-center gap-2 font-bold text-4xl '><p>Hospital</p> <p className=' text-main_color'>Treatment</p></h2>
@@ -92,8 +93,8 @@ const Treatment = () => {
 
       </Layout>
 
-      
       </div>
+      
   )
 }
 
