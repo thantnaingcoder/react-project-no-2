@@ -1,13 +1,14 @@
 import React from "react";
 import Layout from "./Layout";
 import logo from "../images/logo.png";
-import { Input } from "@/components/ui/input";
+
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { SiInstagram } from "react-icons/si";
+import { Input } from "@/components/ui/input"
 
 import p1 from "../images/post1.jpg"
 import p2 from "../images/post2.jpg"
@@ -19,21 +20,23 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#252525]">
-      <Layout>
-        <div className=" container ">
-          <div className="  container flex items-center gap-10">
-            <img className=" px-5 py-3 bg-white" src={logo} />
+    <div className=" bg-[#252525]    ">
+      
+       
 
-            <div className=" container  flex max-w-full ">
+
+          <div className="   md:w-3/4 mx-auto   flex items-center gap-4 lg:gap-10">
+            <img className=" size-14 md:size-20 p-2 lg:px-5 lg:py-3 bg-white" src={logo} />
+
+            <div className="   flex w-full items-center content-center  ">
               <Input
-                className=" bg-[#252525] placeholder:gray-500 border-white w-full mb-3"
+                className=" bg-[#252525] placeholder:gray-500 border-none rounded-none     w-full mb-3"
                 placeholder="Your email"
               />
 
               <button
                 onClick={() => alert("hi")}
-                className="-ms-20 text-main_color"
+                className="-ms-20 text-main_color text-sm md:text-md  "
               >
                 SUBSCRIBE
               </button>
@@ -44,29 +47,29 @@ const Footer = () => {
          {/* -------------------------- footer session ---------------------                         */}
 
 
-          <div className=" container max-w-full mt-20 grid grid-cols-4 gap-3 text-white">
+          <div className=" md:w-3/4 mx-auto  mt-5 lg:mt-20 grid grid-cols-2 lg:grid-cols-4  gap-3 lg:gap-3 text-white">
 
-            <div className=" space-y-5">
-              <div className=" flex gap-2 mb-5">
-                <p className=" p-3 bg-main_color"></p> <p>ADDRESS</p>
+            <div className=" p-3 space-y-2 md:space-y-5 text-gray-200">
+              <div className=" flex gap-1 md:gap-2 md:mb-5">
+                <p className=" p-3 bg-main_color"></p> <p className=" text-md md:text-md lg:text-lg">ADDRESS</p>
               </div>
 
-              <div className=" flex items-center gap-4">
+              <div className=" flex items-center gap-2 lg:gap-4">
               <FaLocationDot />
-              <p>Location</p>
+              <p className=" text-sm md:text-md">Location</p>
               </div>
 
-              <div className=" flex items-center gap-4">
+              <div className=" flex items-center gap-2 lg:gap-4">
               <FaPhoneAlt />
-              <p>Call +01 5012345</p>
+              <p className=" text-sm md:text-md">Call +01 5012345</p>
               </div>
                
-              <div className=" flex items-center gap-4">
+              <div className="  flex items-center gap-2 lg:gap-4">
               <MdEmail />
-              <p> Meco-myanmar@gmail.com </p>
+              <p className=" text-sm md:text-md"> Meco-d@gmail.com </p>
               </div>
 
-              <div className=" text-main_color flex gap-5">
+              <div className=" text-main_color flex gap-2 md:gap-5">
               <FaFacebookF size={20} />
               <FaTwitter size={20}  />
               <FaLinkedinIn size={20}  />
@@ -76,48 +79,48 @@ const Footer = () => {
             </div>
 
 
-            <div className=" flex flex-col space-y-1">
-              <div className=" flex gap-2 mb-5">
-                <p className=" p-3 bg-main_color"></p> <p>Useful link</p>
+            <div className=" p-3 flex flex-col space-y-1 text-gray-200 ">
+              <div className=" flex gap-1 lg:gap-2 lg:mb-5">
+                <p className=" p-3 bg-main_color "></p> <p className=" text-md md:text-md lg:text-lg">Useful link</p>
               </div>
 
               
-              <p>Home</p>
-              <p>About</p>
-              <p> Treatment</p>
-              <p> Doctors</p>
-              <p> Testimonial</p>
-              <p> Contact Us</p>
+              <p className=" text-sm md:text-md">Home</p>
+              <p className=" text-sm md:text-md">About</p>
+              <p className=" text-sm md:text-md"> Treatment</p>
+              <p className=" text-sm md:text-md"> Doctors</p>
+              <p className=" text-sm md:text-md"> Testimonial</p>
+              <p className=" text-sm md:text-md"> Contact Us</p>
             
             </div>
 
 
-            <div className=" flex flex-col space-y-1">
+            <div className=" p-3 flex flex-col space-y-1 text-gray-200">
               <div className=" flex gap-2 mb-5">
-                <p className=" p-3 bg-main_color"></p> <p>LATEST POSTS</p>
+                <p className=" p-3 bg-main_color "></p> <p className="  text-md md:text-md lg:text-lg">LATEST POSTS</p>
               </div>
 
               <div className=" flex gap-3 items-center">
-                <img className=" w-24" src={p1}/> <p>Normal distribution</p>
+                <img className=" min-w-16 max-w-20" src={p1}/> <p className=" text-sm md:text-md">Normal distribution</p>
               </div>
 
               <div className=" flex gap-3 items-center">
-                <img className=" w-24" src={p2}/> <p>Normal distribution</p>
+                <img className="  min-w-16 max-w-20" src={p2}/> <p className=" text-sm md:text-md">Normal distribution</p>
               </div>
             </div>
 
 
-            <div className=" flex flex-col space-y-1">
+            <div className=" p-3 flex flex-col space-y-1 text-gray-200">
               <div className=" flex gap-2 mb-5">
-                <p className=" p-3 bg-main_color"></p> <p>LATEST POSTS</p>
+                <p className=" p-3 bg-main_color"></p> <p className=" text-sm md:text-md">LATEST POSTS</p>
               </div>
 
               <div className=" flex gap-3 items-center">
-                <img className=" w-24 max-h-20 " src={p3}/> <p>Normal distribution</p>
+                <img className="  min-w-16 max-w-20  " src={p1}/> <p className=" text-sm md:text-md">Normal distribution</p>
               </div>
 
               <div className=" flex gap-3 items-center">
-                <img className=" w-24" src={p4}/> <p>Normal distribution</p>
+                <img className="  min-w-16 max-w-20" src={p2}/> <p className=" text-sm md:text-md">Normal distribution</p>
               </div>
             </div>
 
@@ -129,7 +132,7 @@ const Footer = () => {
 
 
 
-          <p className=" text-white text-center py-20">© 2024 All Rights Reserved By Free Html Templates</p>
+          <p className="  text-center text-sm md:text-md lg:text-lg py-5 md:py-8 lg:py-20 text-gray-200">© 2024 All Rights Reserved By Free Html Templates</p>
 
 
 
@@ -138,8 +141,8 @@ const Footer = () => {
 
 
 
-        </div>
-      </Layout>
+       
+      
     </div>
   );
 };

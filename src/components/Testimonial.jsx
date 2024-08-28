@@ -22,28 +22,28 @@ export function Testimonial() {
       );
   const text = [
     {
-      name: "David",
+      name: "Medical Check-up လုပ်မည်ဆိုလျှင် ဘယ်ကိုဆက်သွယ်ရပါမလဲ ?",
       type: "Default modek text",
-      body: "Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+      body: "Medical Check-up လုပ်မည်ဆိုလျှင် အသက်အရွယ်အလိုက် Program များရှိပါသည်။ ရာသီအလိုက် Package Promotion တွေလဲရှိလို့ အသေးစိတ်စုံစမ်းမေးမြန်းလိုပါက 09 သို့ဆက်သွယ်၍ရပါသည် ",
     },
     {
-      name: "Leo",
+      name: "Patient အရေးကြီး၊ အရေးပေါ်ဖြစ်နေပါက ဘယ်ဆရာဝန်နှင့် ပြလို့ရပါသလဲ ?",
       type: "Default modek text",
-      body: "editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various",
+      body: "Patient ရောဂါအခြေအနေမေးပြီး EMO နှင့်ပြသရန် EMERGENCY သို့ လာရောက်ဆွေးနွေးသင့်ပါသည် ဆေးရုံတက်မည်ဆိုလျှင် အခန်း Booking ယူရန်မလိုပါ။ဆရာဝန်ကြီးများ၏စမ်းသပ်ခသည် တစ်ဦးနှင့်တစ်ဦးယူသည့်နှုန်းတူညီမှုမရှိပါ။ ",
     },
     {
-      name: "Morijorch",
+      name: "ဆေးခန်းပြလျှင်ဖြစ်စေ၊ ဆေးရုံတက်လျှင်ဖြစ်စေ Insurance သုံးလို့ရပါသလား ?",
       type: "Default modek text",
-      body: "editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various",
+      body: "အာရှတော်ဝင်ဆေးရုံနှင့် ချိတ်ဆက်ထားသော Company များ၏လူနာများအားသက်ဆိုင်ရာ Insurance Company မှ ချမှတ်ပြဌာန်းထားသောအချက်အလက်များနှင့်အညီ ဝန်ဆောင်မှုပေးလျက်ရှိပါ သည်။",
     },
   ];
 
   return (
-    <Layout>
-    <div className={` ${location.pathname=="/testimonial" ? "!mt-36 my-28" :  " mt-10" } p-5 space-y-10`}>
+    
+    <div className={` lg:w-3/4 mx-auto  ${location.pathname=="/testimonial" ? " !mt-16 lg:!mt-36 my-28" :  " mt-10" } lg:p-5 lg:space-y-10`}>
 
     
-        <h2 className=" ms-10 text-main_color text-4xl font-bold">Testimonial</h2>
+        <h2 className=" ms-10 lg:ms-20 text-main_color font-bold flex text-2xl ">FAQ</h2>
     <Carousel
       opts={{
         align: "start",
@@ -53,7 +53,7 @@ export function Testimonial() {
       plugins={[plugin.current]}
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.play}
-      className=" container max-w-full "
+      className=" p-1 "
     >
       <div className=" flex items-center content-center gap-3">
         <CarouselPrevious className=" w-96 " />
@@ -65,9 +65,9 @@ export function Testimonial() {
             <CarouselItem key={index} className="pl-1 select-none  ">
             <Card className=" ">
               <CardContent className=" flex flex-col pt-5 ">
-                <p className=" text-main_color font-bold text-lg"> {t.name} </p>
-                <p className=" mb-5 text-gray-300 font-semibold ">{t.type}</p>
-                <p className=" text-gray-700 font-sans text-justify">{t.body}</p>
+                <p className=" text-main_color font-bold text-md lg:text-lg"> {t.name} </p>
+                {/* <p className=" mb-5 text-md text-gray-300 font-semibold ">{t.type}</p> */}
+                <p className=" text-gray-600 text-sm font-sans text-justify">{t.body}</p>
               </CardContent>
             </Card>
           </CarouselItem> )}
@@ -80,6 +80,6 @@ export function Testimonial() {
       </div>
     </Carousel>
     </div>
-    </Layout>
+  
   );
 }

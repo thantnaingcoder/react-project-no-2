@@ -24,45 +24,48 @@ const Slider = () => {
     Autoplay({ delay: 3000, stopOnInteraction: true })
   );
   return (
-       <div className=" bg-dot-image bg-no-repeat  bg-right-bottom bg-inherit bg-20 ">
+    <>
+    
+       <div className="  bg-dot-image bg-no-repeat  bg-right-top  bg-20 ">
+
       <Carousel
        opts={{
         align: "start",
         loop: true,
       }}
-        className="max-w-full mx-auto  container border-b-2 shadow-lg     "
+        className="max-w-full bg-transparent   border-b-2 shadow-lg      "
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.play}
       >
-         <Layout>
-        <CarouselContent className=" mt-5 ">
+         
+        <CarouselContent >
 
-          <CarouselItem>
+          <CarouselItem >
             
-            <div className=" mt-16 bg-transparent grid grid-cols-2 py-5">
-              <div className=" mt-24 ">
+            <div className=" container mt-7 md:mt-16 bg-transparent grid md:grid-cols-2 py-2 md:py-5">
+
+              <div className="  md:mt-5 lg:mt-20 md:p-10 pt-2   ">
                 <Lottie
                   loop={true}
                   autoplay={true}
-                  className="w-24"
+                  className="w-16 mt-5 -mb-3  md:w-24 ms-0  "
                   animationData={animationData}
                 />
 
-                <div className=" p-3">
-                  <h4 className=" text-6xl font-bold">MICO</h4>
-                  <h4 className=" text-6xl font-bold text-main_color">
+                <div className=" ">
+                  <h4 className="  text-2xl sm:text-3xl md:text-3xl lg:text-6xl font-bold">MICO</h4>
+                  <h4 className=" text-2xl sm:text-3xl md:text-3xl lg:text-6xl font-bold text-main_color">
                     HOSPITAL
                   </h4>
 
-                  <p className=" text-gray-500 mt-10">
-                    when looking at its layout. The point of using Lorem Ipsum
-                    is that it has a more-or-less normal distribution of
-                    letters, as opposed to
+                  <p className=" text-justify text-gray-500 mt-3 sm:mt-3 md:mt-5 lg:mt-10 text-sm md:text-md lg:text-lg">
+                  We are providing multidisciplinary medical care service with modern medical equipments.
+                  We're here to help you lead an active, healthy life.
                   </p>
 
                   <Button
-                    className=" bg-[#0C0C0C] px-10 mt-5 text-white"
+                    className=" bg-[#0C0C0C] px-2 md:px-10 mt-5 sm:mt-5  md:mt-5 text-white"
                     variant="outline"
                   >
                     Contact Us
@@ -71,28 +74,31 @@ const Slider = () => {
               </div>
 
               <div>
-                <img className="  " src={Slide} />
+                <img className=" max-w-[500px] container md:pt-5 mx-auto items-center content-center   bg-cover m-0 md:m-5 " src={Slide} />
               </div>
             </div>
           </CarouselItem>
 
 
 
-          <CarouselItem>
+          <CarouselItem className=" "  >
              <About/>
           </CarouselItem>
 
 
 
         </CarouselContent>
-        <div className=" flex justify-end gap-5 -mb-6">
-           <CarouselPrevious />
+        <div className=" me-5 lg:me-20 flex justify-end gap-4 -mb-7">
+           <CarouselPrevious  />
         <CarouselNext />
         </div>
        
-        </Layout>
+       
       </Carousel>
       </div>
+
+
+      </>
     
   );
 };

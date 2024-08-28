@@ -17,7 +17,7 @@ const Home = () => {
   const nav = useNavigate();
   return (
     <>
-      <div className=" ">
+      
         {/* <Layout>
           <NavBar />
         </Layout> */}
@@ -40,7 +40,7 @@ const Home = () => {
         <Touch/>
 
        
-      </div>
+     
     </>
   );
 };

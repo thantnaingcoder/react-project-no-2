@@ -17,12 +17,12 @@ const DoctorsCard = ({name,photo}) => {
 
   return (
 
-    <CarouselItem   className="pl-1 md:basis-1/2 lg:basis-1/3">
-    <div className=" py-10">
+    <CarouselItem   className="  sm:basis-1/2 md:basis-1/3">
+    <div className=" lg:py-10">
       <Card>
-        <CardContent className="flex aspect-square items-center justify-center  p-6">
-           <div className=" flex flex-col justify-center content-center items-center gap-2">
-               <img className=" max-h-80  bg-cover shadow-lg -mt-24" src={photo}/>
+        <CardContent className="flex aspect-square items-center justify-center  ">
+           <div className=" container max-w-full flex flex-col justify-center content-center items-center gap-2">
+               <img className="   shadow-lg  " src={photo}/>
                <p className=" font-bold text-xl ">{name}</p>
                <p className=" font-bold text-xl text-main_color mb-2">MBBS</p>
                <div className=" flex gap-2">

@@ -35,17 +35,17 @@ const Treatment = () => {
     );
   }, []);
   return (
-    <div ref={fadeInRef} className=' mb-10 mt-32 max-w-full container bg-16 bg-right bg-custom-image bg-no-repeat  '>
-      <Layout>
-        <div className=' py-10 space-y-20'>
-         <h2 className='  flex justify-center gap-2 font-bold text-4xl '><p>Hospital</p> <p className=' text-main_color'>Treatment</p></h2>
+    <div ref={fadeInRef} className=' lg:w-3/4 mx-auto mb-10 mt-10 lg:mt-32  container bg-16 bg-right-bottom md:bg-custom-image bg-no-repeat  '>
+      
+        <div className='  py-5 md:py-10 md:space-y-10 lg:space-y-20'>
+         <h2 className='  flex justify-center gap-2 mb-5 font-bold text-2xl lg:text-4xl '><p>Hospital</p> <p className=' text-main_color'>SERVICE</p></h2>
 
-         <div className='  grid grid-cols-4 gap-5'>
+         <div className='  grid grid-cols-2 lg:grid-cols-4 gap-5'>
              <div className=" space-y-4 "> 
                 <img src={t1}/>
-                <p className=' font-bold text-2xl'>Nephrologist Care</p>
+                <p className=' font-bold text-lg  md:text-xl'>Dental Clinic </p>
 
-                <p>alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything</p>
+                <p className=' text-sm md:text-md lg:text-lg text-justify'>သွားနှင့် ခံတွင်းစစ်ဆေးစမ်းသပ်မှုများအတွက် Dental Imaging service ကိုနံနက်(၉)နာရီမှည(၈)နာရီအထိ(နေ့စဉ်ပိတ်ရက်မရှိ)ကျွမ်းကျင်သောပညာရှင်များစမ်းသပ်ရိုက်ကူးပေးလျက်ရှိပါသည်။ထို့အပြင်သွားနှင့်ခံတွင်းအထူးကုဆရာဝန်ကြီးများမှSpecialist directoryပါအချိန်များအတိုင်းနေ့စဉ် ကုသမှုပေးလျက်ရှိပါသည်။</p>
 
                 <p className=' text-main_color'>READ MORE</p>
 
@@ -53,9 +53,12 @@ const Treatment = () => {
 
              <div className=" space-y-4 "> 
                 <img src={t2}/>
-                <p className=' font-bold text-2xl'>Eye Care</p>
+                <p className=' font-bold text-lg  md:text-xl'>Inpatient Care</p>
 
-                <p>alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything</p>
+                <p className=' text-sm md:text-md lg:text-lg'>အဆင့်မြင့်အတွင်းလူနာခန်းများတွင်စောင့်ကြပ်ကြည့်ရှုမှု (Inpatient Care)
+
+                သက်ဆိုင်ရာ Ward များတွင် ကျန်းမာရေးစောင့်ရှောက်မှုအား Medical Officer ဦးဆောင်သော Team မှ
+                (24)hrs ကျန်းမာရေးဝန်ဆောင်မှုပေးလျက်ရှိပါသည်။။</p>
 
                 <p className=' text-main_color'>READ MORE</p>
 
@@ -63,9 +66,9 @@ const Treatment = () => {
 
              <div className=" space-y-4 "> 
                 <img src={t3}/>
-                <p className=' font-bold text-2xl'>Pediatrician Clinic</p>
+                <p className=' font-bold text-lg  md:text-xl'>4D Ultrasound </p>
 
-                <p>alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything</p>
+                <p className=' text-sm md:text-md lg:text-lg text-justify'>လှုပ်ရှားနေသောရင်သွေးငယ်၏ပုံရိပ်ကိုရုပ်ရှင်ကြည့်သကဲ့သို့ မြင်တွေ့ခံစားနိုင်ရန်၊ အလုံးအကျိတ်၊ အရည် အိတ်တည်ခြင်းများတိကျစွာရှာဖွေတိုင်းတာနိုင်ရန်နှင့် တိုက်ရိုက်ကြည့်ရှု၍ အသားစ (biopsy) ယူခြင်းများကိုတိကျသေချာစွာလုပ်ဆောင်နိုင်ရန် ကြိုတင်ရက်ချိန်းရယူကာ ဝန်ဆောင်မှုပေးလျက်ရှိပါသည်။</p>
 
                 <p className=' text-main_color'>READ MORE</p>
 
@@ -73,9 +76,9 @@ const Treatment = () => {
 
              <div className=" space-y-4 "> 
                 <img src={t4}/>
-                <p className=' font-bold text-2xl'>Parental Care</p>
+                <p className=' font-bold text-lg  md:text-xl'>Medical Check Up</p>
 
-                <p>alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything</p>
+                <p className=' text-sm md:text-md lg:text-lg text-justify  '>မိမိကိုယ်တိုင်နှင့် မိသားစုဝင် ဆွေမျိုးများ၏ ကျန်းမာရေးနှင့် ပတ်သက်သောအခြေအနေတစ်ရပ်ရပ်ကိုသိရှိလိုလျှင်လည်းကောင်း၊ ကူးစက်ရောဂါများနှင့်ပတ်သက်၍ကျန်းမာရေးအခြေအနေကို သိရှိလိုလျှင်လည်းကောင်း၊ပုံမှန်အားဖြင့် အနည်းဆုံးတစ်နှစ်တစ်ကြိမ် ကျန်းမာရေးစစ်ဆေးမှုများ ပြုလုပ်သင့်ပါသည်။ </p>
 
                 <p className=' text-main_color'>READ MORE</p>
 
@@ -91,7 +94,7 @@ const Treatment = () => {
          </div>
 
 
-      </Layout>
+      
 
       </div>
       

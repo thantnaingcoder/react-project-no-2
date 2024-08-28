@@ -29,18 +29,21 @@ export function CarouselSpacing() {
       photo: dr3,
     },
     {
-      name: "David",
-      photo:
-        "https://img.freepik.com/premium-photo/portrait-male-medical-doctor-around-40-years-old_1000823-15799.jpg",
+      name: "Leo",
+      photo: dr3,
     },
+   
   ];
   const plugin = React.useRef(
     Autoplay({ delay: 3000, stopOnInteraction: true })
   );
 
   return (
-    <div className=" container max-w-full bg-main_color p-20 ">
-      <h2 className=" mb-5 font-bold text-4xl flex justify-center gap-3">
+
+  
+    <div className="  max-w-full bg-main_color  ">
+      
+      <h2 className=" mb-5 font-bold  text-2xl lg:text-4xl flex justify-center gap-3">
         <p>OUR</p> <p className=" text-white">DOCTORS</p>
       </h2>
       <Carousel
@@ -51,9 +54,9 @@ export function CarouselSpacing() {
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.play}
-        className=" p-5 "
+        className=" p-5 lg:w-3/4 mx-auto "
       >
-        <div className=" flex gap-4 justify-center items-center container max-w-full">
+        <div className=" flex gap-3 lg:gap-4  items-center  ">
           <CarouselPrevious className=" w-28 bg-white text-black" />
           <CarouselContent className="-ml-1">
             {doctors.map((dr, index) => (
@@ -63,6 +66,7 @@ export function CarouselSpacing() {
           <CarouselNext className=" w-28 bg-white text-black" />
         </div>
       </Carousel>
+     
     </div>
   );
 }
