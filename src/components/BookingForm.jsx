@@ -60,13 +60,13 @@ const BookingForm = () => {
   ];
   return (
     
-      <div className=" container   p-10 shadow-2xl md:mt-24">
-        <div className=" flex gap-4 font-semibold py-5">
+      <div className=" lg:container  py-5  lg:p-10 shadow-2xl md:mt-24">
+        <div className=" ms-5 flex gap-4 font-semibold py-5">
           <button onClick={() => setShow(false) } className={` ${show ? " text-main_color " : "border-b-main_color border-b-2"} `}>BOOK</button>
           <button onClick={() => setShow(true) } className={` ${show ? "border-b-main_color border-b-2 " : " text-main_color"} `}>APPOINTMENT</button>
         </div>
 
-        <form className={` ${ show && "hidden"}  grid  md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5`}>
+        <form className={` ${ show && "hidden"} p-5  grid  md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5`}>
 
        <div>
        {/* <Label htmlFor="name">Name</Label> */}
@@ -83,54 +83,7 @@ const BookingForm = () => {
        <Input type="number" id="phone" placeholder="Phone" />
        </div>
 
-          {/* <TextField
-            id="outlined-select-currency"
-            select
-            label="Doctor's Name"
-            defaultValue="EUR"
-            // helperText="Please select your currency"
-          >
-            {doctor.map((option) => (
-              <MenuItem key={option.value} value={option.value}>
-                {option.label}
-              </MenuItem>
-            ))}
-          </TextField> */}
-
-          {/* <Select>
-  <SelectTrigger className="">
-    <SelectValue placeholder="Doctor's Name" />
-  </SelectTrigger>
-  <SelectContent>
-    <SelectItem select value="Jennie">Jennie</SelectItem>
-    <SelectItem value="Marco">Marco</SelectItem>
-    <SelectItem value="Dave">Dave</SelectItem>
-    <SelectItem value="Hla Moe">Hla Moe</SelectItem>
-    
-  </SelectContent>
-</Select> */}
-
-
-          {/* <TextField
-            id="outlined-select-currency"
-            select
-            label="Department's Name"
-            defaultValue="EUR"
-            // helperText="Please select your currency"
-          >
-
-            {department.map((option) => (
-              <MenuItem key={option.value} value={option.value}>
-                {option.label}
-              </MenuItem>
-            ))}
-          </TextField> */}
-
-         
-
-        
-
-       <Textarea label="Symptoms" placeholder="Symptoms" />
+       <Textarea label="Date/Time" placeholder="insert date and time (eg. 20.11.24/11pm)" />
 
 
 
@@ -138,7 +91,7 @@ const BookingForm = () => {
                     className=" bg-[#0C0C0C] md:w-1/2 px-10 mt-5 text-white"
                     variant="outline"
                   >
-                    SUBMIT NOW
+                    BOOK NOW
                   </Button>
         </form>
 

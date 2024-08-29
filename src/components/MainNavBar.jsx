@@ -17,7 +17,7 @@ const MainNavBar = () => {
 
 <Navbar className=" bg-main_color p-0 m-0  "  >
       <Navbar.Brand className=" m-0 p-0" >
-      <img className="  bg-white py-1 md:py-2 md:px-6 p-2 size-12 md:size-24  " src={logo}></img>
+      <img className="  bg-white py-1 md:py-2 md:px-6 p-2 size-14 md:size-24  " src={logo}></img>
       
       </Navbar.Brand>
       <Navbar.Toggle className="" />

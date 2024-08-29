@@ -49,13 +49,13 @@ const Slider = () => {
                 <Lottie
                   loop={true}
                   autoplay={true}
-                  className="w-16 mt-5 -mb-3  md:w-24 ms-0  "
+                  className="w-16 mt-5    md:w-24 ms-0  "
                   animationData={animationData}
                 />
 
                 <div className=" ">
-                  <h4 className="  text-2xl sm:text-3xl md:text-3xl lg:text-6xl font-bold">MICO</h4>
-                  <h4 className=" text-2xl sm:text-3xl md:text-3xl lg:text-6xl font-bold text-main_color">
+                  <h4 className="  text-4xl sm:text-6xl mb-3 md:text-6xl lg:text-6xl font-bold">MICO</h4>
+                  <h4 className=" text-4xl sm:text-6xl md:text-6xl lg:text-6xl font-bold text-main_color">
                     HOSPITAL
                   </h4>
 

@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Textarea } from "@/components/ui/textarea";
 import contactImg from "../images/contact-img.jpg"
+import { Input } from "@/components/ui/input"
 
 import MenuItem from "@mui/material/MenuItem";
 import { Button } from "@/components/ui/button";
@@ -16,35 +17,24 @@ const Touch = () => {
 
         <div className=" container max-w-full content-center mx-auto  grid md:grid-cols-2 lg:gap-10">
           <form className=" sm:px-10 lg:px-20 flex flex-col lg:p-3 gap-3 lg:gap-6">
-            <TextField 
-              id="outlined-basic"
-              className="  "
-              label="Name"
-              placeholder="enter your name"
-              variant="outlined"
-            />
+            
+          <div>
+       {/* <Label htmlFor="name">Name</Label> */}
+       <Input type="text" id="text" placeholder="Name" />
+       </div>
+ 
+       <div>
+       {/* <Label htmlFor="email">Email</Label> */}
+       <Input type="email" id="email" placeholder="Email" />
+       </div>
 
-            <TextField
-              type="email"
-              id="outlined-basic"
-              className=" "
-              label="Email"
-              placeholder="enter your Email"
-              variant="outlined"
-            />
-
-            <TextField
-              type="password"
-              id="outlined-basic"
-              className=" "
-              label="Phone Number"
-              placeholder="enter your password"
-              variant="outlined"
-            />
-
+       <div>
+       {/* <Label htmlFor="email">Phone</Label> */}
+       <Input type="number" id="phone" placeholder="Phone" />
+       </div>
             <Textarea  placeholder="Type your message here." />
 
-            <Button
+            <Button type="button"
                     className=" bg-main_color lg:w-1/2 px-10 mt-5 text-white"
                     variant="outline"
                   >

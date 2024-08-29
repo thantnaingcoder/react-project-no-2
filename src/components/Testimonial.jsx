@@ -40,7 +40,7 @@ export function Testimonial() {
 
   return (
     
-    <div className={` lg:w-3/4 mx-auto  ${location.pathname=="/testimonial" ? " !mt-16 lg:!mt-36 my-28" :  " mt-10" } lg:p-5 lg:space-y-10`}>
+    <div className={`  lg:w-3/4 mx-auto  ${location.pathname=="/testimonial" ? " !mt-16 lg:!mt-36 my-28" :  " mt-10" } lg:p-5 lg:space-y-10`}>
 
     
         <h2 className=" ms-10 lg:ms-20 text-main_color font-bold flex text-2xl ">FAQ</h2>
@@ -56,14 +56,14 @@ export function Testimonial() {
       className=" p-1 "
     >
       <div className=" flex items-center content-center gap-3">
-        <CarouselPrevious className=" w-96 " />
+        <CarouselPrevious className=" lg:w-96 " />
         <CarouselContent className="-ml-1">
 
 
           {text.map((t,index) =>
             
-            <CarouselItem key={index} className="pl-1 select-none  ">
-            <Card className=" ">
+            <CarouselItem key={index} className="pl-1 select-none   ">
+            <Card className=" lg:p-20 ">
               <CardContent className=" flex flex-col pt-5 ">
                 <p className=" text-main_color font-bold text-md lg:text-lg"> {t.name} </p>
                 {/* <p className=" mb-5 text-md text-gray-300 font-semibold ">{t.type}</p> */}
@@ -76,7 +76,7 @@ export function Testimonial() {
 
 
         </CarouselContent>
-        <CarouselNext className=" w-96 " />
+        <CarouselNext className=" lg:w-96 " />
       </div>
     </Carousel>
     </div>

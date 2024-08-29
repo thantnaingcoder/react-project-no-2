@@ -47,13 +47,14 @@ const Footer = () => {
          {/* -------------------------- footer session ---------------------                         */}
 
 
-          <div className=" md:w-3/4 mx-auto  mt-5 lg:mt-20 grid grid-cols-2 lg:grid-cols-4  gap-3 lg:gap-3 text-white">
+          <div className="  md:w-3/4 mx-auto  mt-5 lg:mt-20 grid grid-cols-2 lg:grid-cols-4  gap-3 lg:gap-3 ">
 
-            <div className=" p-3 space-y-2 md:space-y-5 text-gray-200">
-              <div className=" flex gap-1 md:gap-2 md:mb-5">
+            <div className="  p-3 space-y-2 md:space-y-5 text-gray-400">
+              <div className=" flex gap-2 md:gap-2 md:mb-5">
                 <p className=" p-3 bg-main_color"></p> <p className=" text-md md:text-md lg:text-lg">ADDRESS</p>
               </div>
 
+              <div className=" ms-1 space-y-3">
               <div className=" flex items-center gap-2 lg:gap-4">
               <FaLocationDot />
               <p className=" text-sm md:text-md">Location</p>
@@ -75,27 +76,30 @@ const Footer = () => {
               <FaLinkedinIn size={20}  />
               <SiInstagram size={20} />
               </div>
+              </div>
               
             </div>
 
 
-            <div className=" p-3 flex flex-col space-y-1 text-gray-200 ">
-              <div className=" flex gap-1 lg:gap-2 lg:mb-5">
+            <div className=" p-3 flex flex-col space-y-1 text-gray-400 ">
+              <div className=" flex gap-2 lg:gap-2 lg:mb-5">
                 <p className=" p-3 bg-main_color "></p> <p className=" text-md md:text-md lg:text-lg">Useful link</p>
               </div>
 
               
-              <p className=" text-sm md:text-md">Home</p>
+             <div className=" ms-8 space-y-1">
+             <p className=" text-sm md:text-md">Home</p>
               <p className=" text-sm md:text-md">About</p>
               <p className=" text-sm md:text-md"> Treatment</p>
               <p className=" text-sm md:text-md"> Doctors</p>
               <p className=" text-sm md:text-md"> Testimonial</p>
               <p className=" text-sm md:text-md"> Contact Us</p>
+             </div>
             
             </div>
 
 
-            <div className=" p-3 flex flex-col space-y-1 text-gray-200">
+            <div className=" p-3 flex flex-col space-y-1 text-gray-400">
               <div className=" flex gap-2 mb-5">
                 <p className=" p-3 bg-main_color "></p> <p className="  text-md md:text-md lg:text-lg">LATEST POSTS</p>
               </div>
@@ -110,7 +114,7 @@ const Footer = () => {
             </div>
 
 
-            <div className=" p-3 flex flex-col space-y-1 text-gray-200">
+            <div className=" p-3 flex flex-col space-y-1 text-gray-400">
               <div className=" flex gap-2 mb-5">
                 <p className=" p-3 bg-main_color"></p> <p className=" text-sm md:text-md">LATEST POSTS</p>
               </div>
@@ -132,7 +136,7 @@ const Footer = () => {
 
 
 
-          <p className="  text-center text-sm md:text-md lg:text-lg py-5 md:py-8 lg:py-20 text-gray-200">© 2024 All Rights Reserved By Free Html Templates</p>
+          <p className="  text-center text-sm md:text-md lg:text-lg py-5 md:py-8 lg:py-20 text-gray-400">© 2024 All Rights Reserved By Free Html Templates</p>
 
 
 

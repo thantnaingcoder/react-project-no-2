@@ -24,7 +24,7 @@ const About = () => {
           trigger: fadeInRef.current,
           start: "top 80%", // Trigger when the top of the element is 80% from the top of the viewport
           end: "bottom 20%", // End when the bottom of the element is 20% from the top of the viewport
-          toggleActions: "play none none reverse", // Play on enter, reverse on leave
+          toggleActions: "play none none none", // Play on enter, reverse on leave
         },
         duration: 2, // Duration of the fade-in effect
       }
