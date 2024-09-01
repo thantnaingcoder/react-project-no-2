@@ -23,7 +23,7 @@ const MainNavBar = () => {
       <Navbar.Toggle className="" />
 
 
-      <Navbar.Collapse >
+      <Navbar.Collapse className=" cursor-pointer select-none" >
 
         <Navbar.Link onClick={() => nav("/")}  >
         HOME

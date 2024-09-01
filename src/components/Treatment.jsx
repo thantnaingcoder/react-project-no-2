@@ -35,7 +35,7 @@ const Treatment = () => {
     );
   }, []);
   return (
-    <div ref={fadeInRef} className=' lg:w-3/4 mx-auto mb-10 mt-10 lg:mt-32  container bg-16 bg-right-bottom md:bg-custom-image bg-no-repeat  '>
+    <div ref={fadeInRef} className='  lg:w-3/4 mx-auto mb-10 mt-10 lg:mt-32  container bg-16 bg-right-bottom md:bg-custom-image bg-no-repeat  '>
       
         <div className='  py-5 md:py-10 md:space-y-10 lg:space-y-20'>
          <h2 className='  flex justify-center gap-2 mb-5 font-bold text-2xl lg:text-4xl '><p>Hospital</p> <p className=' text-main_color'>SERVICE</p></h2>

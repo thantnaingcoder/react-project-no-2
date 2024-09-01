@@ -64,7 +64,7 @@ export function Testimonial() {
             
             <CarouselItem key={index} className="pl-1 select-none   ">
             <Card className=" lg:p-20 ">
-              <CardContent className=" flex flex-col pt-5 ">
+              <CardContent className=" flex flex-col pt-5 space-y-5 ">
                 <p className=" text-main_color font-bold text-md lg:text-lg"> {t.name} </p>
                 {/* <p className=" mb-5 text-md text-gray-300 font-semibold ">{t.type}</p> */}
                 <p className=" text-gray-600 text-sm font-sans text-justify">{t.body}</p>

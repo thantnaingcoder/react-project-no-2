@@ -29,14 +29,11 @@ const Footer = () => {
             <img className=" size-14 md:size-20 p-2 lg:px-5 lg:py-3 bg-white" src={logo} />
 
             <div className="   flex w-full items-center content-center  ">
-              <Input
-                className=" bg-[#252525] placeholder:gray-500 border-none rounded-none     w-full mb-3"
-                placeholder="Your email"
-              />
+             <input className=" w-full   bg-[#252525] border-white border-b-2 focus:outline-none text-white "/>
 
               <button
                 onClick={() => alert("hi")}
-                className="-ms-20 text-main_color text-sm md:text-md  "
+                className="-ms-20 text-main_color text-sm md:text-md   "
               >
                 SUBSCRIBE
               </button>

@@ -13,8 +13,10 @@ import dr1 from "../images/team1.jpg";
 import dr2 from "../images/team2.jpg";
 import dr3 from "../images/team3.jpg";
 import DoctorsCard from "./DoctorsCard";
+import { useLocation } from "react-router-dom";
 
 export function CarouselSpacing() {
+  const location = useLocation()
   const doctors = [
     {
       name: "Hennry",
@@ -41,7 +43,7 @@ export function CarouselSpacing() {
   return (
 
   
-    <div className="  max-w-full bg-main_color  ">
+    <div className={` ${location.pathname=="/doctor" ? " mt-10  md:mt-24 h-auto" : ""}  py-10 max-w-full bg-main_color `}>
       
       <h2 className=" mb-5 font-bold  text-2xl lg:text-4xl flex justify-center gap-3">
         <p>OUR</p> <p className=" text-white">DOCTORS</p>

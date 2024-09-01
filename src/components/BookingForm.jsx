@@ -88,7 +88,7 @@ const BookingForm = () => {
 
 
             <Button type="submit"
-                    className=" bg-[#0C0C0C] md:w-1/2 px-10 mt-5 text-white"
+                    className=" bg-main_color md:w-1/2 px-10 mt-5 text-white"
                     variant="outline"
                   >
                     BOOK NOW

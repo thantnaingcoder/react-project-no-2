@@ -4,8 +4,11 @@ import abt from "../images/about-img.jpg"
 import { Button } from "@/components/ui/button";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLocation } from 'react-router-dom';
 
 const About = () => {
+
+  const location = useLocation()
  
   gsap.registerPlugin(ScrollTrigger);
 
@@ -34,7 +37,7 @@ const About = () => {
    <>
       
       
-          <div ref={fadeInRef} className=' px-5 lg:px-20 lg:ms-60   md:mx-10  box from mt-16 md:mt-28 bg-transparent lg:mt-36 grid md:grid-cols-2'>
+          <div ref={fadeInRef} className={` ${location.pathname=="/about" ? "py-20" : ""} px-5 lg:px-20 lg:ms-60   md:mx-10  box from mt-16 md:mt-28 bg-transparent lg:mt-36 grid md:grid-cols-2`}>
               
 
              <div className=' items-center  content-center  pr-5'>
@@ -45,7 +48,7 @@ const About = () => {
              လည်း (UNGC) ၏ Criteria များဖြစ်သည့် Human Rights Principle, Labor Principle, Environmental Principle, Anti-corruption Principle များအတိုင်း လေးစားလိုက်နာ ဆောင်ရွက်လျှက်ရှိပါသည်။</p>
 
                   <Button
-                    className=" bg-[#0C0C0C] px-3 md:px-10 mt-2 lg:mt-5 text-white"
+                    className=" bg-main_color px-3 md:px-10 mt-2 lg:mt-5 text-white"
                     variant="outline"
                   >
                     Read More

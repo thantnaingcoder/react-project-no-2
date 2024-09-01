@@ -65,7 +65,7 @@ const Slider = () => {
                   </p>
 
                   <Button
-                    className=" bg-[#0C0C0C] px-2 md:px-10 mt-5 sm:mt-5  md:mt-5 text-white"
+                    className=" bg-main_color px-2 md:px-10 mt-5 sm:mt-5  md:mt-5 text-white"
                     variant="outline"
                   >
                     Contact Us
