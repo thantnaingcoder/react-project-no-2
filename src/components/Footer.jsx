@@ -20,7 +20,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#252525]    ">
+    <div className=" bg-[#252525] z-50   ">
       
        
 

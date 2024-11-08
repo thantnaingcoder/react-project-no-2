@@ -35,7 +35,7 @@ const Treatment = () => {
     );
   }, []);
   return (
-    <div ref={fadeInRef} className='  lg:w-3/4 mx-auto mb-10 mt-10 lg:mt-32  container bg-16 bg-right-bottom md:bg-custom-image bg-no-repeat  '>
+    <div ref={fadeInRef} className='  lg:w-3/4 mx-auto mb-10 mt-10 lg:mt-32   container bg-16 bg-right-bottom md:bg-custom-image bg-no-repeat  '>
       
         <div className='  py-5 md:py-10 md:space-y-10 lg:space-y-20'>
          <h2 className='  flex justify-center gap-2 mb-5 font-bold text-2xl lg:text-4xl '><p>Hospital</p> <p className=' text-main_color'>SERVICE</p></h2>
@@ -52,7 +52,7 @@ const Treatment = () => {
              </div>
 
              <div className=" space-y-4 "> 
-                <img src={t2}/>
+                <img  src={t2}/>
                 <p className=' font-bold text-lg  md:text-xl'>Inpatient Care</p>
 
                 <p className=' text-sm md:text-md line-clamp-6 lg:text-lg'>အဆင့်မြင့်အတွင်းလူနာခန်းများတွင်စောင့်ကြပ်ကြည့်ရှုမှု (Inpatient Care)
