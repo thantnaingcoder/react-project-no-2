@@ -21,9 +21,9 @@ const Treatment = () => {
     // Create a fade-in animation triggered by scrolling
     gsap.fromTo(
       fadeInRef.current,
-      { opacity: 0 },
+      { opacity: 0 ,y:100},
       {
-        opacity: 1,
+        opacity: 1, y:0,
         scrollTrigger: {
           trigger: fadeInRef.current,
           start: "top 80%", // Trigger when the top of the element is 80% from the top of the viewport
